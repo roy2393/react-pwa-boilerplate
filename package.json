@@ -1,0 +1,35 @@
+{
+  "name": "react-pwa-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate code for React Apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --config ./build-utils/webpack.config.js --mode development"
+  },
+  "keywords": [],
+  "author": "Rohit Roy",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "react-hot-loader": "^4.8.4",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roy2393/react-pwa-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/roy2393/react-pwa-boilerplate/issues"
+  },
+  "homepage": "https://github.com/roy2393/react-pwa-boilerplate#readme"
+}
