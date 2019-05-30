@@ -24,8 +24,10 @@
     "eslint": "^5.16.0",
     "eslint-loader": "^2.1.2",
     "eslint-plugin-react": "^7.12.4",
+    "node-sass": "^4.12.0",
     "prettier": "1.17.0",
     "react-hot-loader": "^4.8.4",
+    "sass-loader": "^7.1.0",
     "ts-loader": "^6.0.1",
     "typescript": "^3.5.1",
     "webpack": "^4.30.0",
@@ -35,11 +37,13 @@
   "dependencies": {
     "@types/react": "^16.8.19",
     "@types/react-dom": "^16.8.4",
+    "css-loader": "^2.1.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.0.3",
     "redux": "^4.0.1",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "style-loader": "^0.23.1"
   },
   "repository": {
     "type": "git",

@@ -5,7 +5,7 @@ import {
 } from '../actions/types';
 
 const initialState: RootState = {
-  counterValue: 5,
+  counterValue: 0,
 };
 export default function rootReducer(state = initialState, action): RootState {
   switch (action.type) {
