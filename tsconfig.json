@@ -1,10 +1,16 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": ["types/*"]
+    },
     // Allow importing like `import React from 'react'`
     "allowSyntheticDefaultImports": true,
 
     // Use ES2015 module system
     "module": "es2015",
+
+    "moduleResolution": "node",
 
     // Set React as the JSX factory
     "jsx": "react",
@@ -14,8 +20,8 @@
 
     // Include module source maps for debugging
     "sourceMap": true
- },
- "include": [
+  },
+  "include": [
     "./web-app/**/*"
   ]
 }

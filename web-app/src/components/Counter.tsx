@@ -1,15 +1,38 @@
 import React, {useState} from 'react';
 
-function Counter() {
-  // Declare a new state variable, which we'll call "count"
-  const [count, setCount] = useState(0);
+import {connect} from 'react-redux';
+import {AppState} from '../../../core/redux/store/index';
+import {
+  increaseCounter,
+  decreaseCounter,
+} from '../../../core/redux/actions/index';
 
+function Counter(props) {
+  // Declare a new state variable, which we'll call "count"
   return (
     <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
+      <p>You clicked {props.root.counterValue} times</p>
+      <button
+        onClick={() =>
+          props.increaseCounter({counterValue: props.root.counterValue + 1})
+        }>
+        +
+      </button>
+      <button
+        onClick={() =>
+          props.decreaseCounter({counterValue: props.root.counterValue - 1})
+        }>
+        -
+      </button>
     </div>
   );
 }
 
-export default Counter;
+const mapStateToProps = (state: AppState) => ({
+  root: state.root,
+});
+
+export default connect(
+  mapStateToProps,
+  {increaseCounter, decreaseCounter},
+)(Counter);
